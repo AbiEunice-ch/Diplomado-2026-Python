@@ -1,0 +1,22 @@
+import pandas as pd
+productos = {"Producto" : ["Kiwi","Melon","Uvas","Manzana"],
+"Precio" : [100,50,80,70],
+"Existencia" : [2,5,3,6]}
+
+data_productos = pd.DataFrame(productos)
+
+#Mostrar la columna precios
+print(data_productos["Precio"])
+
+#Productos con precio mayor a $500
+print(data_productos[data_productos["Precio"] > 500])
+
+#CrearIVA
+data_productos["IVA"] = data_productos["Precio"] * .16
+
+#Crear precio final
+data_productos["Precio final"] = data_productos["IVA"] + data_productos["Precio"]
+print(data_productos)
+
+#Productos con existencia menos a 10
+print(data_productos[data_productos["Existencia"] < 10])
