@@ -1,0 +1,20 @@
+
+# ENOE raw datasets
+Final_Project_Women's_Career/enoe_2024_trim1_csv/
+Final_Project_Women's_Career/enoe_2024_trim2_csv/
+Final_Project_Women's_Career/enoe_2024_trim3_csv/
+Final_Project_Women's_Career/enoe_2024_trim4_csv/
+
+# Compressed datasets
+Final_Project_Women's_Career/*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
